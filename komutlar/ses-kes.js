@@ -7,9 +7,9 @@ const permError = new MessageEmbed()
     .setColor('RED')
     .setTitle('Başarısız')
     .setAuthor(message.author.tag, message.author.avatarURL({ size:1024, dynamic:true, format: "png"}))
-    .setDescription(`Bu Komutu Kullanmak İçin <@&${config.sesKesYetkiliRolID}> Yetkisine Sahip Olmalısın!`) 
+    .setDescription(`Bu Komutu Kullanmak İçin <@&${config.personelID}> Yetkisine Sahip Olmalısın!`) 
   
-if (!message.member.roles.cache.has(config.sesKesYetkiliRolID)) return message.channel.send(permError); 
+if (!message.member.roles.cache.has(config.personelID)) return message.channel.send(permError); 
   
 const kanal = message.member.voiceChannel
 const member = message.guild.member(message.mentions.members.first() || message.guild.members.cache.get(args[0]));

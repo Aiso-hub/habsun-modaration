@@ -10,9 +10,9 @@ exports.run = async (client, message, args) => {
     .setColor('RED')
     .setTitle('Başarısız')
     .setAuthor(message.author.tag, message.author.avatarURL({ size:1024, dynamic:true, format: "png"}))
-    .setDescription(`Bu Komutu Kullanmak İçin <@&${ayarlar.banYetkiliRolID}> Yetkisine Sahip Olmalısın!`) 
+    .setDescription(`Bu Komutu Kullanmak İçin <@&${ayarlar.moderatorID}> Yetkisine Sahip Olmalısın!`) 
   
-if (!message.member.roles.cache.has(ayarlar.banYetkiliRolID)) return message.channel.send(permError); 
+if (!message.member.roles.cache.has(ayarlar.anahtarID , ayarlar.ustekipID , ayarlar.moderatorID , ayarlar.managerID , ayarlar.organizatorID)) return message.channel.send(permError); 
   
 const banlog = message.guild.channels.cache.find(c => c.id === ayarlar.banLogKanalID)
   

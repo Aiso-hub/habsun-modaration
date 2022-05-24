@@ -1,10 +1,23 @@
 {
-  "prefix": "",
-  "sahip": "",
+  "prefix": "+",
+  "sahip": "579748667250966584",
   
   "tag": "",
   
-  "sunucuID": "",
+  "sunucuID": "975755949086224484",
+
+  "anahtarID" : "975773681458495498",
+  "ustekipID": "976571796902010922",
+  "personelID": "976572207968952410",
+
+  "dcmodID": "976573912748015646",
+
+  "uzmanID": "976573662570352690",
+  "moderatorID": "976573104400793610",
+  "managerID": "976573039313580085",
+  "organizatorID": "976571812475441162",
+
+
   
   "silYetkiliRolID": "",
   "muteYetkiliRolID": "",
@@ -14,19 +27,19 @@
   "sesKesYetkiliRolID": "",
   "nukeYetkiliRolID": "",
   
-  "mutedRolID": "",
-  "mutedRolİsim": "",
-  "jailedRolID": "",
-  "jailedRolİsim": "",
+  "mutedRolID": "976571192058191965",
+  "mutedRolİsim": "Cezalı",
+  "jailedRolID": "976571192058191965",
+  "jailedRolİsim": "Cezalı",
   "tagRolID": "",
   
-  "muteLogKanalID": "",
-  "unmuteLogKanalID": "",
-  "banLogKanalID": "",
-  "unbanLogKanalID": "",
+  "muteLogKanalID": "978749103926292560",
+  "unmuteLogKanalID": "976576670976839780",
+  "banLogKanalID": "976576670976839780",
+  "unbanLogKanalID": "976576670976839780",
   "vmuteLogKanalID": "",
   "unvmuteLogKanalID": "",
-  "jailLogID": "",
-  "unjailLogID": "",
+  "jailLogID": "976579854046752849",
+  "unjailLogID": "976579854046752849",
   "tagRolLogID": ""
 }

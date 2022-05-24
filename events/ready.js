@@ -1,22 +1,19 @@
-const Discord = require('discord.js');
-const moment = require('moment');
-const chalk = require('chalk');
-const { prefix } = require('../ayarlar.json')
+const Discord = require("discord.js");
+const moment = require("moment");
+const chalk = require("chalk");
+const { prefix } = require("../ayarlar.json");
 
-module.exports = client => {
+module.exports = (client) => {
   var degisenOynuyor = [
-    
-    "Youtube/NoblesYT",
-    "v12 Moderasyon Altyapı"
-    
-  ]
-  
-  setInterval(function() {
-    var degisenOynuyor1 = degisenOynuyor[Math.floor(Math.random() * (degisenOynuyor.length))]
-    client.user.setActivity(`${degisenOynuyor1}`);
+    "Sevgi, doğanın ikinci güneşidir",
+    "O kadar güzelsin ki; Güneş seni seyretmek için doğuyor",
+  ];
 
-}, 2 * 30000);
-  
-  client.user.setStatus("idle"); //dnd, idle, online, offline
-  
-}
+  setInterval(function () {
+    var degisenOynuyor1 =
+      degisenOynuyor[Math.floor(Math.random() * degisenOynuyor.length)];
+    client.user.setActivity(`${degisenOynuyor1}`);
+  }, 2 * 30000);
+
+  client.user.setStatus("dnd"); //dnd, idle, online, offline
+};

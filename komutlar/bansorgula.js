@@ -7,9 +7,9 @@ exports.run = async (client, message, args) => {
     .setColor('RED')
     .setTitle('Başarısız')
     .setAuthor(message.author.tag, message.author.avatarURL({ size:1024, dynamic:true, format: "png"}))
-    .setDescription(`Bu Komutu Kullanmak İçin <@&${ayarlar.banYetkiliRolID}> Yetkisine Sahip Olmalısın!`) 
+    .setDescription(`Bu Komutu Kullanmak İçin <@&${ayarlar.dcmodID}> Yetkisine Sahip Olmalısın!`) 
   
-if (!message.member.roles.cache.has(ayarlar.banYetkiliRolID)) return message.channel.send(permError); 
+if (!message.member.roles.cache.has(ayarlar.anahtarID , ayarlar.ustekipID , ayarlar.personelID , ayarlar.dcmodID)) return message.channel.send(permError); 
   
   if(!args[0]) return message.channel.send(new MessageEmbed().setDescription(`${message.author} bir ID belirtmelisin.`).setColor('0x800d0d').setAuthor(message.member.displayName, message.author.avatarURL({ dynamic: true })).setTimestamp()).then(x => x.delete({timeout: 5000}));
   try {
@@ -22,10 +22,10 @@ if (!message.member.roles.cache.has(ayarlar.banYetkiliRolID)) return message.cha
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['ban-info', 'ban-bilgi'],
+  aliases: ['ban-info', 'ban-bilgi', 'bansorgula'],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'ban-sorgula',
+  name: 'bansorgula',
 };

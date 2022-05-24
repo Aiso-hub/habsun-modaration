@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 const ayarlar = require("../ayarlar.json");
-const yetkili = ayarlar.silYetkiliRolID;
+const yetkili = ayarlar.anahtarID;
 
 exports.run = (Bot, Mesaj, Argüman) => {
   const Sayı = Number(Argüman[0]);

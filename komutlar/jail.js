@@ -13,9 +13,9 @@ const permError = new MessageEmbed()
     .setColor('RED')
     .setTitle('Başarısız')
     .setAuthor(message.author.tag, message.author.avatarURL({ size:1024, dynamic:true, format: "png"}))
-    .setDescription(`Bu Komutu Kullanmak İçin <@&${ayarlar.jailYetkiliRolID}> Yetkisine Sahip Olmalısın!`) 
+    .setDescription(`Bu Komutu Kullanmak İçin <@&${ayarlar.dcmodID}> Yetkisine Sahip Olmalısın!`) 
   
-if (!message.member.roles.cache.has(ayarlar.jailYetkiliRolID)) return message.channel.send(permError); 
+if (!message.member.roles.cache.has(ayarlar.anahtarID , ayarlar.ustekipID , ayarlar.personelID , ayarlar.dcmodID)) return message.channel.send(permError); 
   
 const cezalırol = message.guild.roles.cache.find(r => r.id === ayarlar.jailedRolID)
 const jaillog = message.guild.channels.cache.find(c => c.id === ayarlar.jailLogID)
